@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<h1>Привет, Демид</h1>
+<ul>
+    <li><a href="{{ url_for('index')}}">Главная</a></li>
+    <li><a href="{{ url_for('contacts')}}">Контакты</a></li>
+    <li><a href="{{ url_for('search')}}">Искать в гугле</a></li>
+    <li><a href="{{ url_for('login')}}">Логин</a></li>
+</ul>
+{% block content %}
+
+{% endblock %}
+</body>
+</html>
